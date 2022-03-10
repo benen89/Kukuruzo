@@ -15,43 +15,29 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <a href="" class="link-arrow">learn more</a>
-    <span class="badge badge--primary">10% Off</span>
-    <span class="badge badge--secondary">10% Off</span>
-    <span class="badge badge--primary badge--small">10% Off</span>
-    <ul class="list list--inline">
-      <li class="list__item">list item 1</li>
-      <li class="list__item">list item 2</li>
-      <li class="list__item">list item 3</li>
-    </ul>
-    <ul class="list list--tick">
-      <li class="list__item">list item 1</li>
-      <li class="list__item">list item 2</li>
-      <li class="list__item">list item 3</li>
-    </ul>
-    <spam class="icon-container">
-      <svg class="icon icon--primary">
-        <use xlink:href="images/sprite.svg#computer"></use>
-      </svg>
-    </spam>
-    <button type="button" class="btn btn--primary">BUY NOW</button>
-    <button type="button" class="btn btn--secondary">BUY NOW</button>
-    <button type="button" class="btn btn--accent">BUY NOW</button>
-    <button type="button" class="btn btn--outline btn-block">BUY NOW</button>
-    <a href="" class="btn btn--primary btn--block">BUY NOW</a>
-
-    <div class="input-group">
-      <spam class="icon-container">
-        <svg class="icon icon--primary">
-          <use xlink:href="images/sprite.svg#computer"></use>
-        </svg>
-      </spam>
-      <input
-        type="text"
-        class="input"
-        placeholder="Enter domain name here..."
-      />
-      <button type="button" class="btn btn--accent">Search</button>
+    <div style="width: 50vw; padding: 3rem">
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% off</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button type="button" class="btn btn--outline btn--block">
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
