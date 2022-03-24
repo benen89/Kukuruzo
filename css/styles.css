@@ -171,13 +171,13 @@ a {
   fill: white;
 }
 .icon-container {
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
   background-color: #f3f9fa;
-  height: 64px;
-  width: 64px;
   border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
 }
 .icon-container--accent {
   background-color: var(--accent-color);
@@ -308,6 +308,7 @@ a {
   margin: 0;
   color: white;
   font-size: 2.4rem;
+  font-weight: 500;
 }
 .plan__price {
   font-size: 6rem;
@@ -382,9 +383,8 @@ a {
 .quote {
   color: var(--body-texy-color-darker);
   font-style: italic;
-  font-weight: 500;
   font-size: 3rem;
-  margin: 2.4rem 0;
+  line-height: 1.3;
 }
 .quote__text::before {
   content: open-quote;
@@ -414,6 +414,10 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
     font-size: 2.4rem;
   }
 
@@ -447,6 +451,7 @@ a {
 }
 .testimonila__image {
   position: relative;
+  margin: 0 3rem;
 }
 .testimonila__image > img {
   width: 100%;
@@ -463,6 +468,7 @@ a {
   }
   .testimonial .quote {
     margin-left: 6rem;
+    margin-right: 0;
   }
 }
 
@@ -480,7 +486,7 @@ a {
 .callout__heading {
   color: white;
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 .callout .btn {
   justify-self: center;
@@ -538,6 +544,10 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
+}
+.block__heading {
+  margin-top: 0;
 }
 .block--dark {
   background: black;
@@ -548,13 +558,12 @@ a {
 .block--dark h3 {
   color: white;
 }
-.block__heading {
-  margin-top: 0;
-}
 .block--skew-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 .block--skew-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 .container {
@@ -596,7 +605,7 @@ a {
   border-radius: 5px;
 }
 .nav__brand {
-  transform: translatey(6px);
+  transform: translateY(6px);
 }
 @media screen and (min-width: 768px) {
   .nav__toggler {
@@ -666,7 +675,7 @@ a {
 }
 /* features */
 .feature {
-  gap: 4rem 9rem;
+  gap: 4rem 2rem;
   margin: 12rem 0;
 }
 .feature:first-of-type {
@@ -701,8 +710,5 @@ a {
   .block-showcase__image > img {
     width: auto;
     max-width: 672px;
-  }
-  .block-showcase .block__header {
-    margin-bottom: 5rem;
   }
 }
