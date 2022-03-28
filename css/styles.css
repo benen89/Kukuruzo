@@ -540,7 +540,7 @@ a {
 /* block */
 .block {
   --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  padding: var(--padding-vertical) 3rem;
 }
 
 .block__header {
@@ -724,7 +724,7 @@ a {
 /*  footer */
 .footer {
   background-color: #232323;
-  padding-top: 15rem;
+  padding-top: 26rem;
 }
 .footer a {
   color: #777;
@@ -761,6 +761,9 @@ a {
   opacity: 0.3;
 }
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 17rem;
+  }
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
@@ -789,14 +792,19 @@ a {
 
 .callout-footer-container {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: center;
 }
 .callout-footer {
   max-width: 980px;
-  transform: translateY(10rem);
+  transform: translateY(16rem);
 }
 .block.testimonial {
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .callout-footer {
+    transform: translateY(10rem);
+  }
 }
