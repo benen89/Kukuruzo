@@ -785,3 +785,7 @@ a {
     margin: 1rem 0 1.5rem;
   }
 }
+
+.callout-footer {
+  background-color: #232323;
+}
