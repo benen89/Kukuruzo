@@ -724,6 +724,7 @@ a {
 /*  footer */
 .footer {
   background-color: #232323;
+  padding-top: 10rem;
 }
 .footer a {
   color: #777;
@@ -786,6 +787,13 @@ a {
   }
 }
 
+.callout-footer-container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
 .callout-footer {
-  background-color: #232323;
+  max-width: 980px;
+  transform: translateY(7rem);
 }
