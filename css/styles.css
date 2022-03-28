@@ -724,7 +724,7 @@ a {
 /*  footer */
 .footer {
   background-color: #232323;
-  padding-top: 10rem;
+  padding-top: 15rem;
 }
 .footer a {
   color: #777;
@@ -795,5 +795,8 @@ a {
 }
 .callout-footer {
   max-width: 980px;
-  transform: translateY(7rem);
+  transform: translateY(10rem);
+}
+.block.testimonial {
+  padding-bottom: 1rem;
 }
