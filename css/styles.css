@@ -448,7 +448,11 @@ a {
 }
 /* testimonial */
 .testimonial {
-  padding: 3rem;
+  padding: 3vw;
+  width: 100%;
+}
+.testimonial .grid {
+  width: 100%;
 }
 .testimonila__image {
   position: relative;
@@ -744,6 +748,7 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2.8rem;
 }
 .footer__brand {
   margin-top: 5rem;
@@ -801,9 +806,7 @@ a {
   max-width: 980px;
   transform: translateY(16rem);
 }
-.block.testimonial {
-  padding-bottom: 1rem;
-}
+
 @media screen and (min-width: 768px) {
   .callout-footer {
     transform: translateY(10rem);
